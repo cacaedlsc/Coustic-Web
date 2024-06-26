@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Coustic</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SECTION HEADER -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="second.html">Second</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-love"><a href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a href="wishlist.html"><i class="fa fa-heart-o"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="login-container">
+            <form class="login-form" action="process_login.php" method="POST">
+                <h2>Login</h2>
+                <p><i>Please login to your account first to access your cart.</i></p>
+                <br>
+
+                <!-- Input email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Input password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Tombol submit untuk login -->
+                <button type="submit" class="btn-login">Login</button>
+
+                <!-- Tautan untuk lupa password -->
+                <div class="forgot-password">
+                    <a href="forgot-password.html">Forgot your password?</a>
+                </div>
+
+                <!-- Tautan untuk membuat akun baru -->
+                <div class="create-account">
+                    <p>Don't have an account yet? <a href="registration.html">Create one here</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Merbabu Raya No. 504, Kota Semarang, Jawa Tengah</p>
+            <p><strong>Phone: </strong>(024) 98725 / (024) 25938</p>
+            <p><strong>Hours: </strong>08.00 - 20.00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <!-- Tautan untuk Login dan My Account -->
+            <a href="login.html">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Salsa E - 2201530047</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function addToCart() {
+            // Implementasi pengecekan login di sini
+            // Contoh sederhana, arahkan langsung ke halaman login jika belum login
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
+
+
+
