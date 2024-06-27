@@ -30,7 +30,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== TRUE) {
 
             <div>
                 <ul id="navbar">
-                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="active" href="index.php">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="new.html">New</a></li>
                     <li><a href="second.html">Second</a></li>
