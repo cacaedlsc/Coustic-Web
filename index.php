@@ -1,3 +1,14 @@
+<?php
+# Initialize the session
+session_start();
+
+# If user is not logged in then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== TRUE) {
+  echo "<script>" . "window.location.href='./login.php';" . "</script>";
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +35,7 @@
                     <li><a href="new.html">New</a></li>
                     <li><a href="second.html">Second</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./logout.php" class="btn btn-primary">Log Out</a></li>
                     <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                     <a href="#" id="close"><i class="far fa-times"></i></a>
                 </ul>
@@ -36,6 +48,9 @@
 
         <!-- HOME PAGE -->
         <section id="hero">
+            <h2>Halo! Selamat datang  <?= htmlspecialchars($_SESSION["username"]); ?>!</h2>
+            <p><b>———————</b></p>
+            <br>
             <h4>Penawaran Menarik Juni!</h4>
             <h2>Gitar Akustik Terbaik 2024</h2>
             <h1>Diskon Menarik s/d 55%</h1>
@@ -370,7 +385,7 @@
 
             <div class="col">
                 <h4>My Account</h4>
-                <a href="login.php">Sign In</a>
+                <a href="#">Sign In</a>
                 <a href="#">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track My Order</a>
