@@ -140,7 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/cara-title.png" type="image/x-icon">
   <script defer src="./js/script.js"></script>
 </head>
 
