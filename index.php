@@ -102,7 +102,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== TRUE) {
                         </div>
                         <h4>1.879.000 IDR</h4>
                     </div>
-                    <a href="./2010s-yamaha-na.html"><i class="fal fa-shopping-cart cart"></i></a>
+                    <a href="./second-product/02010001.html"><i class="fal fa-shopping-cart cart"></i></a>
                 </div>
                 <div class="pro">
                     <img src="img/product-guitar-index/2023 Takamine GC5-NAT Natural Gloss.jpg" alt="">
